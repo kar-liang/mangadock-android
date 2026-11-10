@@ -1,0 +1,13 @@
+<resources>
+    <!--
+      v21：系统深色时用深色窗口底，避免冷启动那一下白闪。
+      App 内的实际配色由 MangaTheme 按「深浅模式 + 动态取色」算，这里只兜住第一帧。
+    -->
+    <style name="Theme.MangaDock" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">#FF0E0E10</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>

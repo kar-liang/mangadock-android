@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- iOS icon.json 的 dark solid: 0.07059, 0.08627, 0.10980 -> #12161C -->
+    <color name="ic_launcher_background">#FF12161C</color>
+</resources>

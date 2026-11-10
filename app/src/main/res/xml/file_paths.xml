@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  FileProvider 只放开「更新包」这一个目录（cacheDir/updates），
+  和 Updater.download 的落盘位置必须一致。
+  下载的半包是 .part 后缀，同样在这个目录下 —— 系统安装器只认传过去的那个 URI，
+  不会自己去列目录，所以不用额外区分。
+-->
+<paths>
+    <cache-path name="updates" path="updates/" />
+</paths>

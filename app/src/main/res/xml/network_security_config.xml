@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  自用 NAS：证书多半是自签或自建 CA。
+  这里把「用户安装的证书」也算进信任锚，配合 WebDavClient.trustSelfSigned 一起用。
+  cleartext 也放开，方便直接连 http 的内网地址（比如自己起的测试服务）。
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

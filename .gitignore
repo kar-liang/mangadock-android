@@ -1,0 +1,24 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+build/
+captures/
+.externalNativeBuild
+.cxx
+local.properties
+.kotlin/
+_out/
+
+# v97 公开仓库前的决定（2026-11-10）：_refs/ 是 FlClash 的 Dart 参考源码（GPL），
+# 已从 git 历史中整体剔除，只在本地留一份对照用，不进仓库。
+_refs/
+
+# 本地凭据 / 环境变量：绝不进公开仓库
+.dav-creds
+*.dav-creds
+.env
+.env.*
+*.jks
+*.keystore
